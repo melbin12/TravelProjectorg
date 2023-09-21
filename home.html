@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
     <!-- boot strap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awsome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Document</title>
     <!-- google fonts  -->
- 
+ <!-- js -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- nave bar  -->
-    <nav class="navbar navbar-expand-lg" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="home.html" id="logo"><span>T</span>ravel</a>
+          <a class="navbar-brand" href="home.html" id="logo"><span>Fly High</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span><i class="fa-solid fa-bars"></i></span>
           </button>
@@ -32,13 +36,13 @@
                 <a class="nav-link" href="#packages">Packages</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#book">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#book">Gallary</a>
+                <a class="nav-link" href="#gallary">Gallary</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#book">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -51,23 +55,135 @@
     <!-- nave bar End -->
 
    <!-- Hmoe section start -->
-   <div class="home">
+   <!-- <div class="home">
     <div class="content">
         <h5>Welcome to world</h5>
         <h1>Visit <span class="chagecontent"></span></h1>
         <p>Lorem ipsum , dolor sit amet </p>
         <a href="#book">Book place</a>
     </div>
-
-   </div>
+   </div> -->
+   <div class="home">
+    <div class="content">
+   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block" style="width: 100%;height: 650px;" src="https://img.veenaworld.com/group-tours/world/australia-new-zealand/aubs/auzm-bnn-1-aubs-2162022.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fly High</h5>
+          <p>Explore the London</p>
+        <a href="#book">Book place</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block" style="width: 100%;height: 650px;" src="https://thumbs.dreamstime.com/b/travel-to-england-travel-tourism-banner-clouds-sun-wit-travel-to-england-travel-tourism-banner-clouds-sun-109447966.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fly High</h5>
+          <p>...</p>
+        <a href="#book">Book place</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block" style="width: 100%;height: 650px;" src="https://thumbs.dreamstime.com/b/travel-to-england-travel-tourism-banner-clouds-sun-wit-travel-to-england-travel-tourism-banner-clouds-sun-109447966.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fly High</h5>
+          <p>...</p>
+        <a href="#book">Book place</a>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
    <!-- Hmoe section End -->
 
+
+
+   <!-- section packages start  -->
+
+   <section class="packages" id="packages">
+    <div class="container">
+      <div class="main-text">
+        <h1><span>Packages</span></h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/most-beautiful-places-in-the-us-red-rocks-1578088552.jpg" alt="">
+            <div class="card-body">
+              <h3>United States</h3>
+              <p>hfadhhdsfghaihgoidshghdfghpdhgpdhgpdhfpighpghpad hoihgpihiahiha  hoiuhgpaiuh</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>price : <strong>₹500</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://www.holidify.com/images/tooltipImages/SRINAGAR.jpg" alt="">
+            <div class="card-body">
+              <h3>United States</h3>
+              <p>hfadhhdsfghaihgoidshghdfghpdhgpdhgpdhfpighpghpad hoihgpihiahiha  hoiuhgpaiuh</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>price : <strong>₹500</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://dynamic.tourtravelworld.com/blog_images/cherrapunjee-meghalaya-20161018051313.jpg" alt="">
+            <div class="card-body">
+              <h3>United States</h3>
+              <p>hfadhhdsfghaihgoidshghdfghpdhgpdhgpdhfpighpghpad hoihgpihiahiha  hoiuhgpaiuh</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>price : <strong>₹500</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+   </section>
+   <!-- section packages end  -->
+   
    <!-- section book start -->
 
    <section class="book" id="book">
     <div class="container">
       <div class="main-text">
-        <h1><span>B</span>OOK</h1>
+        <h1><span>BOOK</span></h1>
       </div>
       <div class="row">
       <div class="col-md-6 py-3 py-md-0">
@@ -90,101 +206,173 @@
    </section>
 
    <!-- section book end -->
-
-   <!-- section packages start  -->
-
-   <section class="packages" id="packages">
-    <div class="container">
-      <div class="main-text">
-        <h1><span>P</span>ackages</h1>
-      </div>
-
-      <div class="row" style="margin-top: 30px;">
-        <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="https://hips.hearstapps.com/hmg-prod/images/most-beautiful-places-in-the-us-red-rocks-1578088552.jpg" alt="">
-            <div class="card-body">
-              <h3>United States</h3>
-              <p>hfadhhdsfghaihgoidshghdfghpdhgpdhgpdhfpighpghpad hoihgpihiahiha  hoiuhgpaiuh</p>
-              <div class="star">
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star "></i>
-              </div>
-              <h6>price : <strong>₹500</strong></h6>
-              <a href="#book">Book Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="https://hips.hearstapps.com/hmg-prod/images/most-beautiful-places-in-the-us-red-rocks-1578088552.jpg" alt="">
-            <div class="card-body">
-              <h3>United States</h3>
-              <p>hfadhhdsfghaihgoidshghdfghpdhgpdhgpdhfpighpghpad hoihgpihiahiha  hoiuhgpaiuh</p>
-              <div class="star">
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star "></i>
-              </div>
-              <h6>price : <strong>₹500</strong></h6>
-              <a href="#book">Book Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="https://hips.hearstapps.com/hmg-prod/images/most-beautiful-places-in-the-us-red-rocks-1578088552.jpg" alt="">
-            <div class="card-body">
-              <h3>United States</h3>
-              <p>hfadhhdsfghaihgoidshghdfghpdhgpdhgpdhfpighpghpad hoihgpihiahiha  hoiuhgpaiuh</p>
-              <div class="star">
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star checked"></i>
-                <i class="fa-solid fa-star "></i>
-              </div>
-              <h6>price : <strong>₹500</strong></h6>
-              <a href="#book">Book Now</a>
-            </div>
-          </div>
-        </div>
-
-        
-      </div>
-    </div>
-   </section>
-   <!-- section packages end  -->
-
    <!-- section service start -->
    <section class="services" id="services">
     <div class="container">
-      <div class="main-txt">
-        <h1><span>S</span>ervices</h1>
+      <div class="main-text">
+        <h1><span>Services</span></h1>
       </div>
 
       <div class="row" style="margin-top: 30px;">
         <div class="col-md-4 py-3 py-md-0" >
           <div class="card">
+            <i class="fas fa-globe-asia"></i>
+            <div class="card-body">
+              <h3>Around the world</h3>
+              <p>the service will available in 24 in to 7 any one can contact any time</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0" >
+          <div class="card">
             <i class="fas fa-hotel"></i>
             <div class="card-body">
-              <h3>Affordable Hotel</h3>
+              <h3>Safty guide</h3>
+              <p>the service will available in 24 in to 7 any one can contact any time</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0" >
+          <div class="card">
+            <i class="fas fa-utensils"></i>
+            <div class="card-body">
+              <h3>food & Drinks</h3>
               <p>the service will available in 24 in to 7 any one can contact any time</p>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0" >
+        <div class="card">
+          <i class="fas fa-plane"></i>
+          <div class="card-body">
+            <h3>fast travel</h3>
+            <p>the service will available in 24 in to 7 any one can contact any time</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0" >
+        <div class="card">
+          <i class="fas fa-hiking"></i>
+          <div class="card-body">
+            <h3>Adventures</h3>
+            <p>the service will available in 24 in to 7 any one can contact any time</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0" >
+        <div class="card">
+          <i class="fas fa-utensils"></i>
+          <div class="card-body">
+            <h3>food & Drinks</h3>
+            <p>the service will available in 24 in to 7 any one can contact any time</p>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
    </section>
-   <!-- section service end -->
+   <!-- section service end --> 
 
+   <!-- section Gallary start -->
+   <section class="gallary" id="gallary">
+    <div class="container">
+      <div class="main-text">
+        <h1><span>Gallary</span></h1>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card" id="card">
+            <img src="https://www.revv.co.in/blogs/wp-content/uploads/2019/11/self-drive-car-rental-delhi-gurgaon-noida_revv-blog.jpg" alt="" height="230px">
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card" id="card">
+            <img src="https://www.planetware.com/photos-large/IND/india-top-attractions-jaisalmer.jpg" alt="" height="230px">
+          </div>
+        </div>
+        
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card" id="card">
+            <img src="https://images.news18.com/ibnlive/uploads/2021/09/hawa-mahal-16326642244x3.jpg" alt="" height="230px">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card" id="card">
+            <img src="https://dynamic.tourtravelworld.com/blog_images/cherrapunjee-meghalaya-20161018051313.jpg" alt="" height="230px">
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card" id="card">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2016/05/uttarakhand-872x430.jpg" alt="" height="230px">
+          </div>
+        </div>
+        
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card" id="card">
+            <img src="https://thumbor.bigedition.com/disney-california-adventure/qKUaVM-SApTlvgDiMpOD5VULWJ4=/800x0/filters:quality(80)/granite-web-prod/ac/0e/ac0ecc33214643fbbd0d9f0316ea4c34.jpeg" alt="" height="230px">
+          </div>
+        </div>
+
+      </div>
+    </div>
+   </section>
+   <!-- section Gallary end -->
+
+   <!-- about start -->
+   <section class="about" id="about">
+    <div class="container">
+      <div class="main-txt">
+        <h1>AboutUs<span></span></h1>
+      </div>
+      <div class="row" style="margin-top: 50px;">
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="https://lawfullylegal.com/wp-content/uploads/2023/05/best-treehouses-in-thekkady-850x550-1.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0">
+          <h2>The Agency Work</h2>
+          <p>Do not forget to mention the address and other contact information to get more engagement from tourists.</p>
+          <button id="about-btn">Read More...</button>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- about end -->
+
+   <!-- Footer  start-->
+   <footer id="footer">
+    <h1><Span>Fly High</Span></h1>
+    <p>Do not forget to mention the address and other contact information to get more engagement from tourists.</p>
+    <div class="social-links">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="credit">
+      <p>Designed By<a href="#">SA Coding</a></p>
+    </div>
+    <div class="copyright">
+      <p>&copy;Designed SA Coding All reserver</a></p>
+    </div>
+   </footer>
+   <!-- footer End -->
 
 </body>
 </html>

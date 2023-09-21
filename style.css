@@ -20,10 +20,10 @@
     margin-bottom: 5px;
 }
 #logo span{
-    color: #ffa500;
+    color: #034694;
 }
 .navbar-toggler span{
-    color: #ffa500;
+    color: #034694;
 }
 
 .navbar-nav{
@@ -40,28 +40,22 @@
 }
 
 .nav-item .nav-link:hover{
-    background: #ffa500;
+    background: #034694;
     color: #f9f9f9;
 }
 #navbar form button{
-    background: orange;
+    background: #034694;
     color: #f9f9f9;
     border: none;
 }
 /* nave bar  */
 
 /* home section  */
-.home{
-    width: 100%;
-    height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(https://free4kwallpapers.com/uploads/originals/2020/07/18/taj-mahal-agra-india-wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 /* home section  */
 .home .content{
     text-align: center;
-    padding-top: 250px;
+    padding-top: 80px;
 }
 
 .home .content h5{
@@ -80,7 +74,7 @@
 
 .chagecontent::after{
     content: ' ';
-    color: #ffa500;
+    color: #034694;
     text-shadow: 0px 1px 1px black;
     animation: changetext 10s infinite linear ;
 }
@@ -114,7 +108,7 @@
     margin-top: 5px;
 }
  .home .content a:hover{
-    background: #ffa500;
+    background: #034694;
     color: #f9f9f9;
  }
  @media (max-width:850px){
@@ -138,7 +132,7 @@
 /* home section End */
 
 /* booking section start */
-.book{
+/* .book{
     background: #f9f9f9;
     padding: 50px;
 }
@@ -196,7 +190,86 @@
     .main-text h1{
      padding: 20px;
     }
-}
+} */
+
+/* Updated CSS for the booking page */
+
+/* Background and padding for the booking section */
+.book {
+    background: #f9f9f9;
+    padding: 50px;
+  }
+  
+  /* Center-align the main text and add text shadow */
+  .main-text h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    font-size: 36px; /* Increase font size for better visibility */
+    margin-bottom: 20px; /* Add some space below the heading */
+  }
+  
+  /* Style the first letter of "Packages" with orange color */
+  .main-text h1 span {
+    color: #034694;
+  }
+  
+  /* Style the package cards */
+  .book .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Slightly increase the shadow */
+    transition: transform 0.2s ease-in-out; /* Add a smooth hover effect */
+  }
+  
+  /* Add a subtle hover effect to the cards */
+  .book .card:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+  }
+  
+  /* Style the form elements */
+  .book form input,
+  .book form textarea {
+    padding: 10px;
+    color: #333; /* Change text color to a darker shade */
+    border: 1px solid #ccc; /* Add a border for input elements */
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Slightly increase the shadow */
+    width: 100%; /* Make input fields expand to full width */
+    margin-bottom: 15px; /* Add space between input fields */
+  }
+  
+  /* Style the submit button */
+  .book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #034694;
+    color: #f9f9f9;
+    border: none; /* Remove button border */
+    border-radius: 10px;
+    padding: 10px 20px; /* Increase padding for better button appearance */
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* Change button color on hover */
+  .book .submit:hover {
+    background: #034694; /* Slightly darker orange on hover */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 765px) {
+    .book {
+      padding: 20px; /* Add padding for smaller screens */
+    }
+    .main-text h1 {
+      font-size: 24px; /* Decrease font size for smaller screens */
+      padding: 0;
+    }
+  }
+  
 /* booking section end */
 
 /* section packages start */
@@ -209,7 +282,7 @@
 }
 
 .main-text h1 span{
-    color: #ffa500;
+    color: #034694;
 }
 
 .packages .card{
@@ -231,7 +304,7 @@
     font-weight: 600;
 }
 .checked{
-    color: #ffa500;
+    color: #034694;
 }
 .star i{
     font-size: 15px;
@@ -240,7 +313,7 @@
 .packages .card .card-body a{
     padding: 10px;
     text-decoration: none;
-    background: #ffa500;
+    background: #034694;
     color: #f9f9f9;
     border-radius: 5px;
 }
@@ -248,5 +321,114 @@
 
 
 /* section services start */
-
+.services{
+    background: #f9f9f9;
+    margin-top: 30px;
+}
+.services .card{
+    box-shadow: 0px 5px 5px -6px black;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #034694;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+    text-align: center;
+}
 /* section services end */
+
+/* section Gallary start */
+.gallary{
+    margin-top: 50px;
+}
+
+.gallary .card{
+    border-radius: 10%;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+
+.gallary .card .img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card .img:hover{
+    transform: scale(1.1);
+}
+/* section Gallary start */
+
+/* About start  */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-size: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #034694;
+    color:white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;   
+@media(max-width:765px){
+    padding: 0;
+}
+}
+/* About End  */
+
+/* footer start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+  color: #034694;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size:20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #034694;
+}
+/* footer End */
+
